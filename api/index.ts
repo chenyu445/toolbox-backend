@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { handle } from "hono/vercel";
-import authRoutes from "../src/routes/auth";
-import passwordRoutes from "../src/routes/passwords";
+import authRoutes from "../src/routes/auth.js";
+import passwordRoutes from "../src/routes/passwords.js";
 
 const app = new Hono().basePath("/");
 app.get("/", (c) => {
