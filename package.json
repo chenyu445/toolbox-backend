@@ -2,6 +2,9 @@
   "name": "tool-box-backend",
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "tsx watch dev.ts",
     "build": "tsc",
