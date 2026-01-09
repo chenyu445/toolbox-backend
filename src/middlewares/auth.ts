@@ -1,5 +1,5 @@
 import { Context, Next } from "hono";
-import { getSession, refreshSession, SessionData } from "../services/session.ts";
+import { getSession, refreshSession, SessionData } from "../services/session";
 
 /**
  * 认证中间件

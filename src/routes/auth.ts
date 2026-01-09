@@ -1,11 +1,11 @@
 import { Hono } from "hono";
-import { db } from "../db/index.ts";
-import { users } from "../db/schema.ts";
+import { db } from "../db/index";
+import { users } from "../db/schema";
 import { eq } from "drizzle-orm";
 import { nanoid } from "nanoid";
-import { code2Session } from "../services/wechat.ts";
-import { createSession, deleteSession, getSession, SessionData } from "../services/session.ts";
-import { authMiddleware } from "../middlewares/auth.ts";
+import { code2Session } from "../services/wechat";
+import { createSession, deleteSession, getSession, SessionData } from "../services/session";
+import { authMiddleware } from "../middlewares/auth";
 
 const auth = new Hono<{
   Variables: {
