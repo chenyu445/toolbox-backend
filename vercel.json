@@ -1,13 +1,13 @@
 {
   "functions": {
-    "src/index.ts": {
+    "dist/src/index.js": {
       "maxDuration": 60
     }
   },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/src/index.ts"
+      "destination": "/dist/src/index.js"
     }
   ]
 }
