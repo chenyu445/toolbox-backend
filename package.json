@@ -1,0 +1,29 @@
+{
+  "name": "tool-box-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch dev.ts",
+    "build": "tsc",
+    "vercel-build": "tsc",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.7",
+    "@neondatabase/serverless": "^1.0.2",
+    "@vercel/kv": "^1.0.1",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.0.0",
+    "nanoid": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "drizzle-kit": "^0.31.8",
+    "tsx": "^4.21.0",
+    "typescript": "^5.3.3",
+    "vercel": "^33.0.1"
+  }
+}
