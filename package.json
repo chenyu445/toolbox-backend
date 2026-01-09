@@ -8,7 +8,6 @@
   "scripts": {
     "dev": "tsx watch dev.ts",
     "build": "tsc",
-    "vercel-build": "tsc",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio"
