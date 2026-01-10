@@ -1,10 +1,10 @@
 import { Hono } from "hono";
-import { db } from "../db/index";
-import { passwords } from "../db/schema";
+import { db } from "../db/index.js";
+import { passwords } from "../db/schema.js";
 import { eq, and, desc, sql } from "drizzle-orm";
 import { nanoid } from "nanoid";
-import { authMiddleware } from "../middlewares/auth";
-import { SessionData } from "../services/session";
+import { authMiddleware } from "../middlewares/auth.js";
+import { SessionData } from "../services/session.js";
 
 const app = new Hono<{
   Variables: {

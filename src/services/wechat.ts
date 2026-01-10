@@ -1,4 +1,4 @@
-import { WechatLoginResponse } from "../types/wechat";
+import { WechatLoginResponse } from "../types/wechat.js";
 
 const WECHAT_API_BASE = "https://api.weixin.qq.com";
 
