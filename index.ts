@@ -1,14 +1,12 @@
 import { Hono } from "hono";
 import { handle } from "hono/vercel";
-import authRoutes from "../src/routes/auth";
-import passwordRoutes from "../src/routes/passwords";
+import authRoutes from "./src/routes/auth";
+import passwordRoutes from "./src/routes/passwords";
 
-const app = new Hono().basePath("/api");
-
+const app = new Hono().basePath("/");
 app.get("/", (c) => {
   return c.text("Damon love you");
 });
-
 // Routes
 app.route("/auth", authRoutes);
 app.route("/passwords", passwordRoutes);
