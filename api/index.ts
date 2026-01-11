@@ -1,7 +1,6 @@
 /**
  * @file index.ts
- * @description This file is the entry point of the application.
+ * @description This file is placed here for build configuration purposes.
  */
-// import app from "../index.js";
-// export default app;
+
 console.log("hello world");
