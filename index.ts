@@ -3,7 +3,7 @@ import { handle } from "hono/vercel";
 import authRoutes from "./src/routes/auth.js";
 import passwordRoutes from "./src/routes/passwords.js";
 
-const app = new Hono().basePath("/");
+const app = new Hono().basePath("/api");
 app.get("/", (c) => {
   return c.text("Damon love Ella & Xiaoqun");
 });
