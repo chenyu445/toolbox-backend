@@ -5,7 +5,7 @@ import passwordRoutes from "./src/routes/passwords.js";
 
 const app = new Hono().basePath("/");
 app.get("/", (c) => {
-  return c.text("Damon love Ella");
+  return c.text("Damon love Ella & Xiaoqun");
 });
 // Routes
 app.route("/auth", authRoutes);
